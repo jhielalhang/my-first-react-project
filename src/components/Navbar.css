@@ -1,0 +1,59 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Logo text */
+.logo {
+  color: #61dafb;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+/* Navigation links (centered) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 3rem;
+  margin-left: 50px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem; /* Enlarge the text */
+  font-weight: 600;  /* Make it bolder */
+  padding: 0.5rem 1rem; /* Add more clickable space */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Register button (right corner) */
+.register-btn {
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: white;
+}
