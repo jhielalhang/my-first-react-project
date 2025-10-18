@@ -1,40 +1,26 @@
-/* Background section */
-.hero-section {
-  background-image: url("./picturespa.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Full screen */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-  font-size: 2.5rem;
-  font-weight: bold;
-  position: relative;
+/* Container styling */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* Add a soft overlay for better text visibility */
-.hero-section::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 0;
+/* Sub-section boxes */
+.sub-section {
+  background-color: #1f1f1f; /* dark background for the box */
+  border: 1px solid #444;    /* subtle border */
+  border-radius: 10px;       /* rounded corners */
+  padding: 20px;
+  margin-bottom: 20px;       /* spacing between sections */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* soft shadow */
+  color: #fff;               /* text color */
 }
 
-.hero-section h2 {
-  position: relative;
-  z-index: 1;
+.sub-section h3 {
+  margin-top: 0;
+  color: #00bcd4;            /* accent color for titles */
 }
 
-/* Optional: Remove extra margin/padding from the body */
-body, html, #root {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+.sub-section p {
+  line-height: 1.6;
 }
