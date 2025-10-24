@@ -1,0 +1,29 @@
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: #f8f9fa;
+  color: #333;
+  text-align: center;
+  transition: background 0.5s ease;
+}
+
+section:nth-child(even) {
+  background: #e0f7fa;
+}
+
+.container {
+  max-width: 800px;
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}

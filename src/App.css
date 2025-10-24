@@ -1,26 +1,89 @@
-/* Container styling */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html { 
+  scroll-behavior: smooth; 
 }
 
-/* Sub-section boxes */
-.sub-section {
-  background-color: #1f1f1f; /* dark background for the box */
-  border: 1px solid #444;    /* subtle border */
-  border-radius: 10px;       /* rounded corners */
-  padding: 20px;
-  margin-bottom: 20px;       /* spacing between sections */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* soft shadow */
-  color: #fff;               /* text color */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.sub-section h3 {
-  margin-top: 0;
-  color: #00bcd4;            /* accent color for titles */
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #f2f2f2;
+  font-family: 'Inter', "Poppins", sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.sub-section p {
+#root {
+  min-height: 100vh;
+}
+
+/* Center content in all sections */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+h1 { font-size: 3rem; color: #D46FFF; } /* Pinkish-purple */
+h2 { font-size: 2rem; color: #D46FFF; }
+
+/* Paragraphs */
+p {
+  max-width: 600px;
   line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  background: #D46FFF;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #FF7FFF; /* Lighter pink-purple */
+  transform: translateY(-2px);
+}
+
+/* Skills badges */
+.skill-badge {
+  background: #1a1a1a;
+  color: #D46FFF;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background: #D46FFF;
+  color: #0a0a0a;
+  transform: translateY(-2px);
 }

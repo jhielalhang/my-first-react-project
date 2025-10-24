@@ -1,23 +1,34 @@
 import React from "react";
-import "./Pages.css";
+import { FaFacebook, FaEnvelope } from "react-icons/fa";
+import "./Contact.css";
 
-function Contact() {
+const Contact = () => {
   return (
-    <section
-      className="page-section"
-      style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1581091870627-3a9eb23e7b07?auto=format&fit=crop&w=1350&q=80')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="container">
-        <h1>Contact Me</h1>
-        <p>Email: <a href="mailto:jelacaratao@gmail.com" style={{color:'#00bcd4'}}>jelacaratao@gmail.com</a></p>
-        <p>Let’s connect or collaborate!</p>
+    <div className="contact-container">
+      <h2>Contact Me</h2>
+      <p>You can reach me via email or Facebook.</p>
+
+      <div className="social-contact">
+        {/* Email contact */}
+        <a
+          href="mailto:carataojela@gmail.com"
+          className="btn email-btn"
+        >
+          <FaEnvelope /> Contact via Email
+        </a>
+
+        {/* Facebook contact */}
+        <a
+          href="https://web.facebook.com/jhielalhang"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn facebook-btn"
+        >
+          <FaFacebook /> Contact via Facebook
+        </a>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default Contact;

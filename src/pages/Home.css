@@ -1,0 +1,66 @@
+/* ===== HERO SECTION ===== */
+.home-section {
+  height: 100vh;
+  background: radial-gradient(circle at 20% 30%, #111, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  animation: bgMove 10s infinite alternate ease-in-out;
+}
+
+@keyframes bgMove {
+  0% {
+    background: radial-gradient(circle at 20% 30%, #111, #000);
+  }
+  100% {
+    background: radial-gradient(circle at 80% 70%, #222, #000);
+  }
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 1.6rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #ffcc00;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-btn {
+  background: #ffcc00;
+  color: black;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: white;
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px #ffcc00;
+}
